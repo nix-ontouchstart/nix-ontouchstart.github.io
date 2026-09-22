@@ -1,5 +1,18 @@
 # nix-ontouchstart
 
+This repo is to demo how much work is needed to run a simple shell script to print itself in NixOS.
+
+[flake.nix](flake.nix)
+
+```nix
+{
+  inputs.nixpkgs.url = "github:NixOS/nixpkgs";
+  outputs = { self, nixpkgs }: {
+    packages.aarch64-linux.default = nixpkgs.legacyPackages.aarch64-linux.writeShellScriptBin "nix-ontouchstart" "cat /nix/store/*-nix-ontouchstart/bin/nix-ontouchstart";
+  };
+}
+```
+
 ## In a Nix environment that has flake enabled. 
 
 ```
