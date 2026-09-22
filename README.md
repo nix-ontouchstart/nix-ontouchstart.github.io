@@ -13,7 +13,7 @@ This repo is to demo how much work is needed to run a simple shell script to pri
 }
 ```
 
-## In a Nix environment that has flake enabled. 
+## In NixOS with flake enabled. 
 
 ```
 bash-5.3# nix flake show "github:nix-ontouchstart/nix-ontouchstart.github.io" 1> 1.log 2> 2.log 
@@ -107,7 +107,7 @@ copying path '/nix/store/bqarm9hm2sfw7vlp5nb52l051m03mvf3-stdenv-linux-no-cc' fr
 building '/nix/store/wh7jas4bxpa2wf3ifhvksl2mxlqcx5qs-nix-ontouchstart.drv'...
 ```
 
-## In a docker environment without nix
+## In a docker environment without host NixOS
 
 ```
 % docker run --rm nixos/nix:2.35.2-arm64 bash -c 'echo "experimental-features = nix-command flakes" >> /etc/nix/nix.conf && nix flake show "github:nix-ontouchstart/nix-ontouchstart.github.io"' 1> 1.log 2> 2.log
