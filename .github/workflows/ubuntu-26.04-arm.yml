@@ -11,4 +11,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v6
-    - run: uname -a
+    - name: Platform
+      run: uname -a
+    - name: install.determinate.system/nix
+      run: curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install --no-confirm 
+    - name: nix version
+      run: nix --version
+    - name: show nix-ontouchstart
+      run: nix flake show github:nix-ontouchstart/nix-ontouchstart.github.io
+    - name: run nix-ontouchstart
+      run: nix run github:nix-ontouchstart/nix-ontouchstart.github.io
