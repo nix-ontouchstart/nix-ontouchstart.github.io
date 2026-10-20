@@ -53,3 +53,7 @@ bash-5.3# uname -a && nix --version
 Linux 7e5747a897d4 7.0.14-linuxkit #1 SMP PREEMPT Sun Sep 20 16:14:09 UTC 2026 aarch64 GNU/Linux
 nix (Nix) 2.35.3
 ```
+
+### GitHub Workflows
+
+https://github.com/nix-ontouchstart/nix-ontouchstart.github.io/actions?query=is%3Asuccess
