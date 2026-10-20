@@ -1,4 +1,5 @@
-# https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2604-Arm64-Readme.md
+# https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2604-Readme.md
+
 name: ubuntu-26.04
 
 on: push
