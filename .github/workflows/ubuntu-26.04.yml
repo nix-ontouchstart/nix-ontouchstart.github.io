@@ -11,4 +11,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v6
-    - run: uname -a
+    - name: Platform
+      run: uname -a
+    - name: install.determinate.system/nix
+      run: curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
+    - name: nix version
+      run: nix --version
