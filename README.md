@@ -56,4 +56,4 @@ nix (Nix) 2.35.3
 
 ### GitHub Workflows
 
-https://github.com/nix-ontouchstart/nix-ontouchstart.github.io/actions?query=is%3Asuccess
+<https://github.com/nix-ontouchstart/nix-ontouchstart.github.io/actions?query=is%3Asuccess>
