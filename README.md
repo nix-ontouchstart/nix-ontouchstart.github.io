@@ -14,6 +14,11 @@
 
 (To test workflow: <https://github.com/nix-ontouchstart/nix-ontouchstart-aarch64-linux-ai-generated-nix-rust-wasm-playground/actions>)
 
+### x86_64-linux
+<https://nix-ontouchstart.github.io/nix-ontouchstart-x86_64-linux-ai-generated-nix-rust-wasm-playground/>
+
+(To test workflow: <https://github.com/nix-ontouchstart/nix-ontouchstart-x86_64-linux-ai-generated-nix-rust-wasm-playground/actions>)
+
 ## flake.nix
 
 ```nix
