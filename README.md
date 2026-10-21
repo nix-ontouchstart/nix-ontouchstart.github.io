@@ -4,8 +4,15 @@
 
 ## Fancy Demo
 
+### aarch64-darwin
 <https://nix-ontouchstart.github.io/nix-ontouchstart-aarch64-darwin-ai-generated-nix-rust-wasm-playground/>
+
 (To test workflow: <https://github.com/nix-ontouchstart/nix-ontouchstart-aarch64-darwin-ai-generated-nix-rust-wasm-playground/actions>)
+
+### aarch64-linux
+<https://nix-ontouchstart.github.io/nix-ontouchstart-aarch64-linux-ai-generated-nix-rust-wasm-playground/>
+
+(To test workflow: <https://github.com/nix-ontouchstart/nix-ontouchstart-aarch64-linux-ai-generated-nix-rust-wasm-playground/actions>)
 
 ## flake.nix
 
