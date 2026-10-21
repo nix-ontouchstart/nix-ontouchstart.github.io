@@ -1,5 +1,5 @@
 # https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2604-Readme.md
-name: ubuntu-26.04
+name: build and test
 on: push
 
 jobs:
