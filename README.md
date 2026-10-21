@@ -1,10 +1,13 @@
 # nix-ontouchstart
 
-## Cool Demo
+<https://github.com/nix-ontouchstart>
+
+## Fancy Demo
 
 <https://nix-ontouchstart.github.io/nix-ontouchstart-aarch64-darwin-ai-generated-nix-rust-wasm-playground/>
+(To test workflow: <https://github.com/nix-ontouchstart/nix-ontouchstart-aarch64-darwin-ai-generated-nix-rust-wasm-playground/actions>)
 
-## [flake.nix](flake.nix)
+## flake.nix
 
 ```nix
 {
@@ -42,6 +45,9 @@ nix flake show github:nix-ontouchstart/nix-ontouchstart.github.io
 nix run github:nix-ontouchstart/nix-ontouchstart.github.io
 ```
 
+## GitHub Workflows
+<https://github.com/nix-ontouchstart/nix-ontouchstart.github.io/actions>
+
 ## Local runtime
 
 ### aarch64-darwin
@@ -58,6 +64,3 @@ Linux 7e5747a897d4 7.0.14-linuxkit #1 SMP PREEMPT Sun Sep 20 16:14:09 UTC 2026 a
 nix (Nix) 2.35.3
 ```
 
-### GitHub Workflows
-
-<https://github.com/nix-ontouchstart/nix-ontouchstart.github.io/actions?query=is%3Asuccess>
