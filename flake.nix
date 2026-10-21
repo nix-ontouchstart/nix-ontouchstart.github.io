@@ -1,25 +1,21 @@
 {
-  inputs.nixpkgs.url = "github:NixOS/nixpkgs";
+  inputs.nixpkgs.url = "github:nixos/nixpkgs/master";
   outputs = { self, nixpkgs }: 
     let 
-      systems = [ "aarch64-linux" "aarch64-darwin" "x86_64-linux" ];
+      system = "aarch64-darwin";
+      pkgs = import nixpkgs { inherit system; }; 
     in {
-      packages = nixpkgs.lib.genAttrs systems (system: 
-        let 
-          pkgs = import nixpkgs { inherit system; }; 
-        in {
-          default = pkgs.writeTextFile {
-            name = "nix-ontouchstart";
-            executable = true;
-            destination = "/bin/nix-ontouchstart";
-            text = ''
-              #!${pkgs.stdenv.shell}
-              cat /nix/store/*-nix-ontouchstart/bin/nix-ontouchstart
-            '';
-            meta.mainProgram = "nix-ontouchstart";
-          };
-        }
-      );
+      packages = {
+        ${system}.default = pkgs.writeTextFile {
+          name = "nix-ontouchstart";
+          executable = true;
+          destination = "/bin/nix-ontouchstart";
+          text = ''
+            #!${pkgs.stdenv.shell}
+            cat /nix/store/*-nix-ontouchstart/bin/nix-ontouchstart
+          '';
+          meta.mainProgram = "nix-ontouchstart";
+        };
+      };
     };
 }
-
