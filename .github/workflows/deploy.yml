@@ -1,11 +1,11 @@
-# https://github.com/actions/runner-images/blob/main/images/macos/macos-27-arm64-Readme.md
-name: macos-27
+# https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2604-Arm64-Readme.md
+name: ubuntu-26.04-arm
 
 on: push
 
 jobs:
   build:
-    runs-on: macos-27
+    runs-on: ubuntu-26.04-arm
 
     steps:
     - uses: actions/checkout@v7
