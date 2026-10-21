@@ -2,7 +2,7 @@
   inputs.nixpkgs.url = "github:nixos/nixpkgs/master";
   outputs = { self, nixpkgs }: 
     let 
-      system = "aarch64-linux";
+      system = "x86_64-linux";
       pkgs = import nixpkgs { inherit system; }; 
     in {
       packages = {
