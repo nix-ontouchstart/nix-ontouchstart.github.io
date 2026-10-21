@@ -1,6 +1,10 @@
 # nix-ontouchstart
 
-[flake.nix](flake.nix)
+## Cool Demo
+
+<https://nix-ontouchstart.github.io/nix-ontouchstart-aarch64-darwin-ai-generated-nix-rust-wasm-playground/>
+
+## [flake.nix](flake.nix)
 
 ```nix
 {
