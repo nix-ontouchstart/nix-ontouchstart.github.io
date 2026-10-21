@@ -1,5 +1,5 @@
 # https://github.com/actions/runner-images/blob/main/images/macos/macos-27-arm64-Readme.md
-name: macos-27
+name: build and test
 
 on: push
 
