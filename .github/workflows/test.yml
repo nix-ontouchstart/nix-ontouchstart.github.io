@@ -1,11 +1,11 @@
-# https://github.com/actions/runner-images/blob/main/images/macos/macos-27-arm64-Readme.md
-name: build and test
+# https://github.com/actions/runner-images/blob/main/images/macos/macos-26-arm64-Readme.md
+name: test
 
 on: push
 
 jobs:
-  build:
-    runs-on: macos-27
+  test:
+    runs-on: macos-26
 
     steps:
     - uses: actions/checkout@v7
@@ -15,7 +15,7 @@ jobs:
       run: cat nix-installer.sh | sh -s -- install --no-confirm
     - name: nix version
       run: nix --version
-    - name: nix flake show
+    - name: nix flake show github:nix-ontouchstart/nix-ontouchstart/aarch64-darwin
       run: nix flake show 
     - name: nix run
       run: nix run 
