@@ -10,7 +10,12 @@
 
 <https://nix-ontouchstart.github.io/nix-ontouchstart-ai-generated-nix-rust-wasm-playground/>
 
-(Workflow: <https://github.com/nix-ontouchstart/nix-ontouchstart-ai-generated-nix-rust-wasm-playground/actions>)
+GitHub CI (<https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2604-Readme.md>)
+```
+nix build github:nix-ontouchstart/nix-ontouchstart-ai-generated-nix-rust-wasm-playground/x86_64-linux
+```
+
+(Workflow: <https://github.com/nix-ontouchstart/nix-ontouchstart-ai-generated-nix-rust-wasm-playground/actions?query=branch%3Amain>)
 
 ### aarch64-darwin builder
 <https://nix-ontouchstart.github.io/nix-ontouchstart-aarch64-darwin-ai-generated-nix-rust-wasm-playground/>
