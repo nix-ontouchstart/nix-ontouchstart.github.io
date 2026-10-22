@@ -1,5 +1,5 @@
 # https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2604-Readme.md
-name: build and test
+name: test
 on: push
 
 jobs:
@@ -14,7 +14,7 @@ jobs:
       run: cat nix-installer.sh | sh -s -- install --no-confirm
     - name: nix version
       run: nix --version
-    - name: nix flake show
-      run: nix flake show 
-    - name: nix run
-      run: nix run 
+    - name: nix flake show github:nix-ontouchstart/nix-ontouchstart/x86_64-linux
+      run: nix flake show github:nix-ontouchstart/nix-ontouchstart/x86_64-linux 
+    - name: nix run github:nix-ontouchstart/nix-ontouchstart/x86_64-linux 
+      run: nix run github:nix-ontouchstart/nix-ontouchstart/x86_64-linux 
